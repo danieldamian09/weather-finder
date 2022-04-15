@@ -9,6 +9,8 @@ const ClimaProvider = ({ children }) => {
     pais: "",
   })
 
+  
+
   const datosBusqueda = e => {
     setBusqueda({
       ...busqueda,
