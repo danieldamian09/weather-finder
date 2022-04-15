@@ -16,8 +16,8 @@ const Formulario = () => {
 			setAlerta("Todos los campos son obligatorios");
 			return
 		}
-		consultarClima(busqueda);
 		setAlerta("");
+		consultarClima(busqueda);
 	}
 
 	return (
@@ -35,10 +35,10 @@ const Formulario = () => {
 					<label htmlFor="pais">País</label>
 					<select name="pais" id="pais" onChange={e => datosBusqueda(e)} value={pais}>
 						<option value="">Seleccione un País</option>
-						<option value="US">Estados Unidos</option>
 						<option value="AR">Argentina</option>
 						<option value="CO">Colombia</option>
 						<option value="CR">Costa Rica</option>
+						<option value="US">Estados Unidos</option>
 						<option value="ES">España</option>
 						<option value="PE">Perú</option>
 						<option value="MX">México</option>
