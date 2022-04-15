@@ -5,7 +5,7 @@ const Formulario = () => {
 
 	const [alerta, setAlerta] = useState("");
 
-	const { busqueda, datosBusqueda } = useClima();
+	const { busqueda, datosBusqueda, consultarClima } = useClima();
 	
 	const { ciudad, pais } = busqueda
 
@@ -16,6 +16,7 @@ const Formulario = () => {
 			setAlerta("Todos los campos son obligatorios");
 			return
 		}
+		consultarClima(busqueda);
 		setAlerta("");
 	}
 
